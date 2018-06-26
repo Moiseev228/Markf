@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block top_extract %}
+{% block top_recepts %}{% endblock %}
+{% block top_extract_main %}{% endblock%}
+{% endblock %}
+
+{% block user_block %}
+<div id='user-info'>
+    <img src="{% static 'administration_app/img/extract.png' %}">
+    <h3>Доктор</h3>
+</div>
+{% endblock %}
+
+{% block main_menu %}
+<div id='main-menu'>
+    <!-- <div class='item-menu'>
+        <div class='icon-item-menu'>
+            <img src="{% static 'administration_app/img/icon_menu_home.png' %}">
+        </div>
+        <div class='title-item-menu'>
+            <a href='/extract/main'>ГЛАВНАЯ</a>
+        </div>
+        <div class='clear'></div>
+    </div> -->
+    <div class='item-menu'>
+        <div class='icon-item-menu'>
+            <img src="{% static 'administration_app/img/icon_menu_staff.png' %}">
+        </div>
+        <div class='title-item-menu'>
+            <a href='/extract/recepts'>ВЫПИСКА ПРЕПАРАТОВ</a>
+        </div>
+        <div class='clear'></div>
+    </div>
+</div>
+<div class='clear'></div>
+{% endblock %}
